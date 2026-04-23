@@ -4,7 +4,7 @@ name: primeiro arquivo actions
 # qual será o gatilho para execuçao do job
 on: [push]
 
-job:
+jobs:
   lista_dir:
     runs-on: ubuntu-lastest
     steps:
