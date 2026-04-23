@@ -1,1 +1,14 @@
 # primeiro yml para actions
+name: primeiro arquivo actions
+
+# qual será o gatilho para execuçao do job
+on: [push]
+
+job:
+  lista_dir:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Lista diretorio
+        run: echo ls -la 
+
+        
