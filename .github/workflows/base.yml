@@ -9,6 +9,19 @@ on:
     paths:
       - 'teste/**'    # somente executa se push no diretorio teste  
 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Environment
+        type: choice
+        required: true
+        default: web
+        options:
+          - web
+          - macOs
+          - windows
+          - android 
+          
 jobs:
   lista_dir:
     runs-on: ubuntu-lastest
