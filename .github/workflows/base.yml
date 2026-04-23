@@ -2,7 +2,10 @@
 name: primeiro arquivo actions
 
 # qual será o gatilho para execuçao do job
-on: [push]
+on: 
+  push:
+    branches:
+      - dev
 
 jobs:
   lista_dir:
