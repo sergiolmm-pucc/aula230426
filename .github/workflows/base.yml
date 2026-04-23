@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - dev
+    paths:
+      - 'teste/**'    # somente executa se push no diretorio teste  
 
 jobs:
   lista_dir:
